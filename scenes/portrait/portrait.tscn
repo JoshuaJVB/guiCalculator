@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scenes/portrait/portrait.gd" id="script"]
+[ext_resource type="Texture2D" path="res://assets/portrait/hair_back.png" id="hair_back"]
+[ext_resource type="Texture2D" path="res://assets/portrait/body_base.png" id="body"]
+[ext_resource type="Texture2D" path="res://assets/portrait/eyes_open.png" id="eyes"]
+[ext_resource type="Texture2D" path="res://assets/portrait/brows_neutral.png" id="brows"]
+[ext_resource type="Texture2D" path="res://assets/portrait/mouth_neutral.png" id="mouth"]
+[ext_resource type="Texture2D" path="res://assets/portrait/blush.png" id="blush"]
+[ext_resource type="Texture2D" path="res://assets/portrait/hair_front.png" id="hair_front"]
+
+[node name="Portrait" type="Node2D"]
+script = ExtResource("script")
+
+[node name="HairBack" type="Sprite2D" parent="."]
+texture = ExtResource("hair_back")
+
+[node name="Body" type="Sprite2D" parent="."]
+texture = ExtResource("body")
+
+[node name="Eyes" type="Sprite2D" parent="."]
+texture = ExtResource("eyes")
+
+[node name="Brows" type="Sprite2D" parent="."]
+texture = ExtResource("brows")
+
+[node name="Mouth" type="Sprite2D" parent="."]
+texture = ExtResource("mouth")
+
+[node name="Blush" type="Sprite2D" parent="."]
+texture = ExtResource("blush")
+modulate = Color(1, 1, 1, 0)
+
+[node name="HairFront" type="Sprite2D" parent="."]
+texture = ExtResource("hair_front")
+
+[node name="BlinkTimer" type="Timer" parent="."]
+one_shot = true

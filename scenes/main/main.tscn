@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/portrait/portrait.tscn" id="portrait_scene"]
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="script"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("script")
+
+[node name="Portrait" parent="." instance=ExtResource("portrait_scene")]
+position = Vector2(480, 270)
+scale = Vector2(4, 4)
